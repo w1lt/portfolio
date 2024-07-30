@@ -1,0 +1,63 @@
+<!-- @format -->
+
+<html>
+  <head>
+    <title>Will Whitehead Resume</title>
+    <link rel="icon" href="/assets/favicon.webp" />
+    <link rel="stylesheet" href="/main.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/b00efbd69e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="canvas">
+    <div id="particles-js"></div>
+    <div class="css-blurry-gradient"></div>
+    <div class="css-blurry-gradient2"></div>
+    <div class="wrapper">
+      <header class="site-header">
+        <a class="name" href="/">👨‍💻 Will Whitehead</a>
+        <nav class="nav">
+            <a
+              class="navitem"
+              href="/"
+              ><i class="fa-solid fa-house fa-xs"></i></a>
+           
+            <a
+              class="navitem"
+              target="_blank"
+              href="https://www.linkedin.com/in/willwhitehead122/"
+              ><i class="fa-brands fa-linkedin-in"></i></i
+            ></a>
+            <a class="navitem" target="_blank" href="https://github.com/w1lt"
+              ><i class="fa-brands fa-github"></i></i
+            ></a>
+
+         
+
+            <div id="emoji" class="emoji navitem" onclick="darkMode(this)"></div>
+        </nav>
+      </header>
+      <div class="download-button">
+        <a href="https://docs.google.com/document/d/1AfyetAPTr0x9UEfcnXV7LvWgqlnbYmetNXsP6QqOhN4/export?format=pdf"><i class="fa-solid fa-download fa-sm
+           "></i> Download Resume </a>
+        
+      </div>
+      <div id="resume"
+      style="height: 35em;"
+      >
+        <iframe id="resume-iframe" scrolling="no"  src="https://drive.google.com/file/d/1AfyetAPTr0x9UEfcnXV7LvWgqlnbYmetNXsP6QqOhN4/preview" width="800" height="100%" allow="autoplay"></iframe>
+    </div>
+    </div>
+    <p id="date-updated"></p>
+        <script>
+          const dateUpdated = new Date().toLocaleDateString();
+          document.getElementById("date-updated").textContent = `Updated: ${dateUpdated}`;
+        </script>
+  </body>
+  <script src="particles.js"></script>
+  <script src="darkmode.js"></script>
+</html>
